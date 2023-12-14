@@ -7,11 +7,15 @@ const calculator = {
 }
 
 // Update Display 
-const updateDisplay = () => {
+// const updateDisplay = () => {
+//     const display = document.querySelector('.screen');
+//     display.value = calculator.displayValue;
+// }
+
+function updateDisplay() {
     const display = document.querySelector('.screen');
     display.value = calculator.displayValue;
-}
-
+    }
 updateDisplay();
 
 // Handle Key Presses
@@ -45,6 +49,7 @@ keys.addEventListener('click', (event) => {
 });
 
 // Input Digits
+// Inside the function, the displayValue and waitingForSecondOperand properties of the calculator object are destructured into constants. The calculator object is not defined in the provided code, but it's typically used in a calculator app to store the current state of the calculator.//
 const inputDigit = (digit) => {
     const { displayValue, waitingForSecondOperand } = calculator;
     if (waitingForSecondOperand === true) {
