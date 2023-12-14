@@ -89,3 +89,18 @@ const handleOperator = (nextOperator) => {
     calculator.waitingForSecondOperand = true;
     calculator.operator = nextOperator;
 };
+
+// Calculate
+const calculate = (firstOperand, secondOperand, operator) => {
+    if (operator === '+') {
+        return firstOperand + secondOperand;
+    } else if (operator === '-') {
+        return firstOperand - secondOperand;
+    } else if (operator === '*') {
+        return firstOperand * secondOperand;
+    } else if (operator === '/') {
+        return firstOperand / secondOperand;
+    }
+
+    return secondOperand;
+};
