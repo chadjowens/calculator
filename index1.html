@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="calculator__display">0</div>
+            <!-- <input type="text" id="result" value="0" readonly> -->
+        <!-- </div> -->
+    
+        
+
+        <div class="calculator__keys">
+            <button class="span-two" onclick="clearDisplay()">AC</button>
+            <button class="clear display">DEL</button>
+            <button data-key="divide" data-type="operator">/</button>
+    
+            <button class="7" data-type="number">7</button>
+            <button class="8" data-type="number">8</button>
+            <button class="9" data-type="number">9</button>
+            <button data-key="times" data-type="operator">*</button>
+    
+            <button class="4" data-type="number">4</button>
+            <button class="5" data-type="number">5</button>
+            <button class="6" data-type="number">6</button>
+            <button data-key="plus" data-type="operator">+</button>
+    
+            <button class="1" data-type="number">1</button>
+            <button class="2" data-type="number">2</button>
+            <button class="3" data-type="number">3</button>
+            <button data-key="minus" data-type="operator">-</button>
+    
+            <button class="decimal" data-type="number">.</button>
+            <button class="0" data-type="number">0</button>
+            <button class="span-two" data-type="equal">=</button>
+        
+                <!-- <button onclick="clearDisplay()">C</button> -->
+                <!-- <button onclick="handleOperator('+/-')">+/-</button>
+                <button onclick="handleOperator('%')">%</button> -->
+                <!-- <button onclick="handleOperator('/')">/</button> -->
+                
+            <!-- <div class="numbers"></div>
+            <div class="operators"></div> -->
+        </div>
+
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+
+</html>
